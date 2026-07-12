@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search with FETCH</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div id="search-block" class="search">
+        <input
+          class="search__input search-input"
+          type="text"
+          name="name"
+          id="search-input"
+          required
+          autocomplete="off"
+          placeholder="Поиск"
+        />
+
+        <ul class="search__list list-search list-reset">
+          <!-- <li class="list-search-item">Тест: поиск</li>-->
+        </ul>
+      </div>
+
+      <ul id="main-list" class="main-list list-reset">
+        <!-- <li class="main-list__item item">
+          <div class="main-item__wrapper">
+            <span class="main-list-item__text item-name"> Тест: название репозитория</span>
+            <span class="main-list-item__text item-owner">
+              Тест: владелец
+            </span>
+            <span class="main-list-item__text item-stars"> Тест: рейтинг </span>
+          </div>
+
+          <button class="main-list-item__delete-btn delete-btn btn-reset">
+            <svg
+              width="45"
+              height="42"
+              viewBox="0 0 45 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M43.3514 39.9743L1.35145 1.47431"
+                stroke="#FF0000"
+                stroke-width="4"
+              />
+              <path
+                d="M1.35145 39.9743L43.3514 1.47431"
+                stroke="#FF0000"
+                stroke-width="4"
+              />
+            </svg>
+          </button>
+        </li> -->
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
