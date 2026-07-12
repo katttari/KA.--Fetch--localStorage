@@ -26,10 +26,8 @@ function getRepositories(query) {
 
 // отрисовка сохраненных элементов
 function loadSavedRepositories() {
-  // Проходим циклом по всему localStorage
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    // Загружаем только те ключи, которые создало наше приложение
     if (key && key.startsWith("repo__")) {
       createNewItem(key);
     }
