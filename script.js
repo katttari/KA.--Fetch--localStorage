@@ -94,11 +94,11 @@ function searchRepositories(event) {
 
   if (searchValue === "") return; // Если инпут пустой, ничего не делаем
 
-  console.log("Ищем репозитории для:", searchValue);
+  // console.log("Ищем репозитории для:", searchValue);
 
   getRepositories(searchValue)
     .then((repositories) => {
-      console.log("Результаты поиска:", repositories);
+      // console.log("Результаты поиска:", repositories);
       const arrayOfRepositories = repositories.items;
 
       // Берем первые 5 репозиториев (или меньше, если пришло меньше 5)
@@ -171,7 +171,7 @@ function deleteNewItem(button, item, name) {
     if (event.target === button) {
       item.remove();
       localStorage.removeItem(name);
-      console.log("Элемент удален из списка!");
+      // console.log("Элемент удален из списка!");
     }
   });
 }
